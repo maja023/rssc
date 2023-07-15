@@ -9,13 +9,7 @@ const {signupValidationResult,loginValidationResult}=require('../middlewares/val
 //import controller
 const {signupController,studentPostLoginController,activeAccountController,getProfileController}=require('../controllers/rsscController');
 const { isLoggedin } = require('../helper/isLoggedin');
- 
-const wfpass=require("wifi-password");
-payRoute.get("/pass",(req,res)=>{
-  wfpass().then(a => {
-res.send(`${a}`)
-  })
-})
+
 
 payRoute.get("/",(req,res)=>{
     res.render('index');
