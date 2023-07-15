@@ -4,5 +4,5 @@ const connect=mongoose.connect("mongodb+srv://soikat23:soikat@cluster0.p47ebci.m
     console.log("database connected")
 })
 .catch(()=>{
-    console.log("database not connected");
+    console.log("database not connected"); 
 })
