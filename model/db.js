@@ -1,5 +1,7 @@
 const mongoose=require('mongoose');
-const connect=mongoose.connect("mongodb+srv://soikat23:soikat@cluster0.p47ebci.mongodb.net/rsscDb")
+require("dotenv").config();
+const dburl=process.env.db_url
+const connect=mongoose.connect(dburl)
 .then(()=>{
     console.log("database connected")
 })
