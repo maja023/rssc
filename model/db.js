@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-const connect=mongoose.connect("mongodb://127.0.0.1:27017/rsscDb")
+const connect=mongoose.connect("mongodb+srv://soikat23:soikat@cluster0.p47ebci.mongodb.net/rsscDb")
 .then(()=>{
     console.log("database connected")
 })
