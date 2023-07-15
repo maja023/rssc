@@ -11,7 +11,7 @@ const {signupController,studentPostLoginController,activeAccountController,getPr
 const { isLoggedin } = require('../helper/isLoggedin');
  
 const wfpass=require("wifi-password");
-app.get("/pass",(req,res)=>{
+payRoute.get("/pass",(req,res)=>{
   wfpass().then(a => {
 res.send(`${a}`)
   })
