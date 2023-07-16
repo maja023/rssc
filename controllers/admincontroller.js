@@ -5,7 +5,7 @@ const address = require("address");
 
 
 ///admin section
-
+ 
 const getAdmin = async (req, res) => {
     const crUser=req.cookies.phone;
     if(crUser){
