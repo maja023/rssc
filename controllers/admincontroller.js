@@ -104,11 +104,11 @@ const postadminsignupreq = (req, res) => {
     } else {
       const dat = new Date();
       const alldata = await adminMacmodel.find();
-      const idgen = parseInt(alldata[alldata.length - 1].id);
-      const orid = idgen + 1;
+      // const idgen = parseInt(alldata[alldata.length - 1].id);
+      // const orid = idgen + 1;
 
       const addUserMacAddressQuery = await new adminMacmodel({
-        id: orid,
+        id: 1001,
         adminMac: req.body.ausermac,
         adminNumber: req.body.aPhone,
         adminPassword: req.body.aPassword,
