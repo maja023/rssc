@@ -2,7 +2,7 @@ const adminMacmodel = require("../model/adminmacModel");
 const deviceLoginModel = require("../model/loginDeviceModel");
 const address = require("address");
  
-
+console.log(address.ip())
 
 ///admin section
  
