@@ -6,8 +6,8 @@ const transporter = nodemailer.createTransport({
   secure: false,
   auth: {
     
-    user: 'freelancermazaharul@gmail.com',
-    pass: 'cvhhzwdwbhmjzopg'
+    user: 'majaharul2k23@gmail.com',
+    pass: 'ganrnmkmqjiiumat'
   }
 });
 
@@ -66,7 +66,7 @@ const sendEmail=async(userName,userEmail,accessToken,studentRoll)=> {
 
 try { 
     const info = await transporter.sendMail({
-        from: 'freelancermazaharul@gmail.com', // sender address
+        from: 'majaharul2k23@gmail.com', // sender address
         to: userEmail, // list of receivers
         subject: "Account Activation ", // Subject line
         html:html
