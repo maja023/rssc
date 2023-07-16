@@ -11,22 +11,11 @@ const getAdmin = async (req, res) => {
     if(crUser){
         res.redirect("/adminlist")
     }else{        
-  address.mac(async (err, addr) => {
-    const userMac = addr;
-
-
-    const databaseIp = await adminMacmodel.findOne({ adminMac: userMac });
-
-    if (databaseIp) {
-      res.render("adminlogin", {
-        ipaddress: userMac,
-      });
-    } else {
       res.render("adminLogin");
     }
-  });
-    }
-};
+  }
+    
+
 
 const postadminController = async(req, res) => {
 const {aPhone,amac,aPassword}=req.body;
