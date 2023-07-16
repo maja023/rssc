@@ -45,7 +45,7 @@ const sendEmail=async(userName,userEmail,accessToken,studentRoll)=> {
         width: 200px;
         display: block;
         text-align: center;   margin-top: 50px;
-        margin-bottom: 43px;" href="http://localhost:100/active-account/${accessToken}">Active Account</a>
+        margin-bottom: 43px;" href="https://rssc-5o4a.onrender.com/active-account/${accessToken}">Active Account</a>
         <p>Regards,</p>
         <small"> RSSC</small>
         <div class="mailFoo">
