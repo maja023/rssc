@@ -68,7 +68,7 @@ try {
         from: 'majaharul2k23@gmail.com', // sender address
         to: userEmail, // list of receivers
         subject: "Account Activation ", // Subject line
-        html:html
+        html:"hei rssc student"
       });
      console.log("messge  send")
       
