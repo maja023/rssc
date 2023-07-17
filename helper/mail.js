@@ -71,7 +71,7 @@ try {
         subject: "Account Activation ", // Subject line
         html:html
       });
-    
+     console.log("messge  send")
       
     
 } catch (a) {
