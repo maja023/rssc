@@ -6,11 +6,9 @@ const randomstring=require("random-string-generator");
 const { sendEmail } = require("../helper/mail");
 const random = require("random-string-generator");
 
-
-
 const signupController = async (req, res) => {
   const dat = new Date();
-  console.log(dat)
+
   //data maching
   const checkRoll = req.body.sRoll;
   const checkPhone = req.body.sPhone;
