@@ -38,7 +38,7 @@ const signupController = async (req, res) => {
       studentBan:"false",
       studentAccessToken:accessToken,
       password: req.body.sPassword,
-      Date: dat.toLocaleTimeString() + " - " + dat.toLocaleDateString(),
+      Date: dat.toLocaleTimeString("en-US",{timeZone:'asia/dhaka'}) + " - " + dat.toLocaleDateString("en-US",{timeZone:'asia/dhaka'}),
     });
 
     const rssSave = await signupData.save();
