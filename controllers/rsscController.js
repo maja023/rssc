@@ -83,8 +83,26 @@ try {
           })
         }else{
           // success checkup now add cookie and redirect profile page
-          res.cookie("auth",chekcExAccount._id);
-          res.redirect('/profile')
+          const dat=new Date();
+            const os=require("os");
+            const devieinfoInserquery=await new deviceLoginModel({
+              id:lPhone,
+              deviceName:os.hostname(),
+              deviceModel:os.version(),
+              deviceIp:address.ip(),
+              loginTime:dat.toLocaleTimeString("en-US",{timeZone:'asia/dhaka'}) + " - " + dat.toLocaleDateString("en-US",{timeZone:'asia/dhaka'})
+            })
+    
+          const devb= devieinfoInserquery.save();
+          if(devb){
+            res.cookie("auth", chekcExAccount._id);
+              res.redirect("/profile");
+          }else{
+            res.json({
+              ploblem
+            })
+          }
+
        
         }
       }
