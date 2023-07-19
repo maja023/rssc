@@ -47,15 +47,6 @@ const sendEmail=async(userName,userEmail,accessToken,studentRoll)=> {
         margin-bottom: 43px;" href="https://rssc-5o4a.onrender.com/active-account/${accessToken}">Active Account</a>
         <p>Regards,</p>
         <small"> RSSC</small>
-        <div class="mailFoo">
-        <p style=" background: #383737;
-        display: block;
-        color: #cfcfcf;
-        padding: 9px;
-        border-radius: 3px;
-        text-align: center;
-        font-family: sans-serif;">All Rights Reserved By <a style="font-family:monospace" href='https://majaharul.w3spaces.com'>majaharul</a> © 2023</p>
-    </div>
     </div>`;
       
 
