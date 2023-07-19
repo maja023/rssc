@@ -58,8 +58,9 @@ const rsscScima=mongoose.Schema({
         require:true
     },
   
-    createdOn:{
-        type:String
+    Date:{
+        type:String,
+        require:true
      
     }
 
