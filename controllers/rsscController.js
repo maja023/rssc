@@ -10,6 +10,7 @@ const random = require("random-string-generator");
 
 const signupController = async (req, res) => {
   const dat = new Date();
+  console.log(dat)
   //data maching
   const checkRoll = req.body.sRoll;
   const checkPhone = req.body.sPhone;
@@ -37,7 +38,7 @@ const signupController = async (req, res) => {
       studentBan:"false",
       studentAccessToken:accessToken,
       password: req.body.sPassword,
-      createdOn: dat.toLocaleTimeString() + " - " + dat.toLocaleDateString(),
+      Date: dat.toLocaleTimeString() + " - " + dat.toLocaleDateString(),
     });
 
     const rssSave = await signupData.save();
